@@ -19,7 +19,6 @@ setup(name='FASTA_parser',
       author_email='dfgr0316@gmail.com',
       license='MIT',
       packages=['FASTA_parser'],
-      install_requires = ["biopython >= 1.72",],
       include_package_data=True,
       zip_safe=False,
       entry_points = {
