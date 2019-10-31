@@ -4,8 +4,8 @@ def readme():
     with open('README.rst') as f:
         return f.read()
 
-setup(name='FASTA_parser',
-      version='0.1',
+setup(name='fasta_parser',
+      version='0.2',
       description='A first try on FASTA files parsing',
       classifiers=[
         'Development Status :: Alpha',
@@ -18,10 +18,7 @@ setup(name='FASTA_parser',
       author='Fernando Garcia',
       author_email='dfgr0316@gmail.com',
       license='MIT',
-      packages=['FASTA_parser'],
+      packages=['fasta_parser'],
       include_package_data=True,
-      zip_safe=False,
-      entry_points = {
-        'console_scripts': ['is_fasta=FASTA_parser.command_line:main'],
-      },
+      install_requires=['Bio'],
       )
